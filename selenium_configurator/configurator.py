@@ -25,8 +25,6 @@ class Configurator(object):
             driver.selenium.get('https://anybox.fr/)
             driver.quit()
 
-    You can read more about expected format in the documentation
-    https://selenium-configurator.readthedocs.org
     """
 
     config = None
@@ -64,4 +62,3 @@ class Configurator(object):
             raise ValueError("You should define config attributes before"
                              "getting drivers instances")
         return DriverFactory().get_web_drivers(self.config)
-

@@ -26,16 +26,18 @@ to run it locally::
 Setup local webdriver
 ---------------------
 
-* **`chrome/chromium <https://sites.google.com/a/chromium.org/chromedriver/>`_**
-* **`firefox <https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/
-  WebDriver>`_**
+* `chrome/chromium <https://sites.google.com/a/chromium.org/chromedriver/>`_
+* `firefox <https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/
+  WebDriver>`_
 
 
 Setup grid and nodes
 --------------------
 
-https://hub.docker.com/r/selenium/
-https://github.com/SeleniumHQ/docker-selenium
+You can easly setup a Grid using selenium docker container.
+
+* `Selenium images on docker hub <https://hub.docker.com/r/selenium/>`_
+* `Docker files <https://github.com/SeleniumHQ/docker-selenium>`_
 
 
 

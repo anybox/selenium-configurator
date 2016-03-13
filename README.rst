@@ -26,5 +26,6 @@ Resources
 Licence
 =======
 
-`GNU Lesser General Public License v3 (LGPL-3.0)
- <http://www.gnu.org/licenses/lgpl-3.0.txt>`_
+.. image:: http://www.gnu.org/graphics/lgplv3-88x31.png
+   :target: http://www.gnu.org/licenses/lgpl-3.0.txt
+   :alt: GNU Lesser General Public License v3 (LGPL-3.0)

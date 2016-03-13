@@ -98,12 +98,12 @@ class Safari(Driver):
         {
             'class': 'selenium_configurator.drivers.local.Safari',
             'capabilities': {
-                `Specific capabilities <TODO link>`_
+                ...
             }
         }
 
-        `Specific capabilities <https://github.com/SeleniumHQ/selenium/wiki/
-        DesiredCapabilities#safari-specific>`_
+    `Specific capabilities <https://github.com/SeleniumHQ/selenium/wiki/
+    DesiredCapabilities#safari-specific>`_
     """
     _name = "local_Safari"
 
@@ -119,13 +119,10 @@ class Phantomjs(Driver):
         {
             'class': 'selenium_configurator.drivers.local.Phantomjs',
             'capabilities': {
-                `Specific capabilities <TODO link>`_
+                ...
             }
         }
 
-
-        `Specific capabilities <https://github.com/SeleniumHQ/selenium/wiki/
-        DesiredCapabilities#safari-specific>`_
     """
     _name = "local_phantomjs"
 
