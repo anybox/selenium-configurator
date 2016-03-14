@@ -2,7 +2,7 @@
 Selenium Configurator
 =====================
 
-.. image:: https://api.travis-ci.org/anybox/selenium-configurator.svg?branch=master
+.. image:: https://api.travis-ci.org/anybox/selenium-configurator.svg?branch=develop
    :target: https://travis-ci.org/anybox/selenium-configurator
    :alt: Travis state
 
