@@ -29,7 +29,7 @@ setup(
     name='selenium-configurator',
     version='0.0.1',
     description='Helper API to define multiple webdrivers in config files.',
-    long_description=open('README.rst').read(),
+    long_description=long_description,
     author='Pierre Verkest',
     author_email='pverkest@anybox.fr',
     url='https://github.com/anybox/selenium-configurator',
@@ -50,5 +50,6 @@ setup(
         'Topic :: Software Development :: Testing',
         'Topic :: Utilities',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.7']
+        'Programming Language :: Python :: 2.7'
+    ]
 )

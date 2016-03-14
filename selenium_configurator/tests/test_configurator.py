@@ -61,9 +61,12 @@ class TestConfigurator(TestCase):
         self.assertEqual(3, len(drivers))
 
     def test_get_drivers_missing_class_key(self):
-        conf = Configurator(None)
+        conf = Configurator({})
+        conf.config = None
         with self.assertRaises(ValueError):
             conf.get_drivers()
+        with self.assertRaises(ValueError):
+            Configurator(None)
 
     def test_get_drivers_null(self):
         conf = Configurator.from_string(

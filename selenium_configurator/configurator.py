@@ -30,7 +30,18 @@ class Configurator(object):
     config = None
 
     def __init__(self, config):
+        """
+
+        :param config: dict describing the wishes selenium configuration
+        """
         self.config = config
+        self._control_values()
+
+    def _control_values(self):
+        if not isinstance(self.config, dict):
+            raise ValueError(
+                "config attribute should be a dict (given %r)", self.config
+            )
 
     @classmethod
     def from_string(cls, yaml_conf):
@@ -58,7 +69,5 @@ class Configurator(object):
         :return: A list of drivers instances that contains selenium
                  instance ready to start,
         """
-        if not self.config:
-            raise ValueError("You should define config attributes before"
-                             "getting drivers instances")
+        self._control_values()
         return DriverFactory().get_web_drivers(self.config)

@@ -65,8 +65,10 @@ class Grid(Driver):
                                     global_capabilities=global_capabilities))
         return web_drivers
 
-    def __init__(self, grid_conf, desired_capabilities,
-                 global_capabilities=None, name=None):
+    def __init__(
+        self, grid_conf, desired_capabilities, global_capabilities=None,
+        name=None
+    ):
         """
 
         :param grid_conf:
