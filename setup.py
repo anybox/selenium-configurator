@@ -27,7 +27,7 @@ long_description = read('README.rst', 'CHANGES.rst')
 
 setup(
     name='selenium-configurator',
-    version='0.0.1',
+    version='0.1',
     description='Helper API to define multiple webdrivers in config files.',
     long_description=long_description,
     author='Pierre Verkest',
