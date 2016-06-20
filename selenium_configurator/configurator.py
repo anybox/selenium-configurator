@@ -9,7 +9,7 @@ class Configurator(object):
 
     A short example to launch on a local Firefox would be::
 
-        from selenium-configurator.configurator import Configurator
+        from selenium_configurator.configurator import Configurator
 
         configurator = Configurator(
             {
