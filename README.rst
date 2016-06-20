@@ -3,11 +3,11 @@ Selenium Configurator
 =====================
 
 .. image:: https://api.travis-ci.org/anybox/selenium-configurator.svg?branch=master
-   :target: https://travis-ci.org/anybox/selenium-configurator
-   :alt: Travis state
+    :target: https://travis-ci.org/anybox/selenium-configurator
+    :alt: Travis state
 
-.. image:: https://readthedocs.org/projects/selenium-configurator/badge/?style=flat
-    :target: https://readthedocs.org/projects/selenium-configurator
+.. image:: https://readthedocs.org/projects/selenium-configurator/badge/?version=stable
+    :target: https://selenium-configurator.readthedocs.io/en/stable
     :alt: Documentation Status
 
 This library provide an helper api for selenium launchers. it prepares multiple
