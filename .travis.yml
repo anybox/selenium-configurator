@@ -6,7 +6,7 @@ env:
 python:
   - "2.7"
 addons:
-  firefox: "latest"
+  firefox: "46"
 virtualenv:
   system_site_packages: true
 services:
