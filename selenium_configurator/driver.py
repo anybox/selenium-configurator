@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
 import sys
+import logging
 
 from abc import ABCMeta, abstractmethod
 from copy import deepcopy
+from selenium.common.exceptions import InvalidSessionIdException
+
+log = logging.getLogger(__name__)
 
 
 class DriverFactory:
@@ -97,8 +101,16 @@ class Driver(object):
         browser in case it was closed
         """
         if self._web_driver:
-            self._web_driver.quit()
-            self._web_driver = None
+            try:
+                self._web_driver.quit()
+            except InvalidSessionIdException as err:
+                # According the web driver self._web_driver.close() properly
+                # quit the webdriver
+                log.warning(
+                    "Something goes wrong while quit the driver %r", err
+                )
+            finally:
+                self._web_driver = None
 
     @abstractmethod
     def _start_driver(self):
