@@ -12,7 +12,7 @@ class TestDrivers(TestCase):
         self.driver = Firefox.get_web_drivers({})[0]
         self.assertTrue(isinstance(self.driver, Firefox))
         self.driver.selenium.get('https://python.org')
-        self.assertEquals(u"Welcome to Python.org", self.driver.selenium.title)
+        self.assertEqual(u"Welcome to Python.org", self.driver.selenium.title)
 
     def test_grid(self):
         self.driver = Grid.get_web_drivers(
@@ -23,7 +23,7 @@ class TestDrivers(TestCase):
                     'platform': "LINUX"}]})[0]
         self.assertTrue(isinstance(self.driver, Grid))
         self.driver.selenium.get('https://python.org')
-        self.assertEquals(u"Welcome to Python.org", self.driver.selenium.title)
+        self.assertEqual(u"Welcome to Python.org", self.driver.selenium.title)
 
     def tearDown(self):
         if self.driver:
