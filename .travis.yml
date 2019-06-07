@@ -1,3 +1,4 @@
+dist: xenial
 language: python
 sudo: required
 env:
@@ -5,14 +6,19 @@ env:
     - DISPLAY=:99.0
 python:
   - "2.7"
+  - "3.5"
+  - "3.6"
+  - "3.7"
 addons:
-  firefox: "46.0.1"
-virtualenv:
-  system_site_packages: true
+  firefox: "latest"
 services:
+  - xvfb
   - docker
 before_install:
-  - sh -e /etc/init.d/xvfb start
+  - wget https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz
+  - mkdir -p geckodriver
+  - tar -xzf geckodriver-v0.24.0-linux64.tar.gz -C geckodriver
+  - export PATH=$PATH:$PWD/geckodriver
   - docker run -d -p 4444:4444 --name selenium-hub -e GRID_TIMEOUT=10000 selenium/hub
   - docker run -d --dns 8.8.8.8 --link selenium-hub:hub selenium/node-firefox
   - docker run -d --dns 8.8.8.8 --link selenium-hub:hub selenium/node-chrome
