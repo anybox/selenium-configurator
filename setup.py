@@ -24,12 +24,12 @@ def read(*args, **kwargs):
 
 requires = parse_requirements('requirements.txt')
 long_description = read('README.rst', 'CHANGES.rst')
-LGPLv3 = 'License :: OSI Approved :: GNU Lesser General Public License v3 or ' \
-         'later (LGPLv3+)'
+LGPLv3 = 'License :: OSI Approved :: GNU Lesser General Public License v3 or' \
+         ' later (LGPLv3+)'
 
 setup(
     name='selenium-configurator',
-    version='0.1',
+    version='0.1.1',
     description='Helper API to define multiple webdrivers in config files.',
     long_description=long_description,
     author='Pierre Verkest',
