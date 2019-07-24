@@ -1,4 +1,4 @@
-0.1.1 (UNRELEASED)
+0.1.1 (2019-07-24)
 ------------------
 
 - Ignore InvalidSessionIdException while quitting webdriver
