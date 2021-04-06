@@ -23,6 +23,9 @@ class Firefox(Driver):
 
     `Specific capabilities <https://github.com/SeleniumHQ/selenium/wiki/
     DesiredCapabilities#webdriver>`_
+    or from
+    `Mozilla doc <https://developer.mozilla.org/en-US/docs/Web/WebDriver/
+    Capabilities>`_
     """
     _name = "local_firefox"
 
